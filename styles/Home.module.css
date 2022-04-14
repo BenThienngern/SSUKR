@@ -11,16 +11,474 @@
   justify-content: center;
   align-items: center;
 }
+.donateCard {
+  position: absolute;
+  width: 1003px;
+  left: 220px;
+  top: 90px;
+  height: 250px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  background-color: #ffffff;
+}
+.aboutDonationCard {
+  position: absolute;
+  width: 1003px;
+  left: 220px;
+  top: 700px;
+  height: 200px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  /* background-color: #ffffff; */
+}
+.mainNewsCard {
+  position: absolute;
+  width: 1203px;
+  left: 120px;
+  bottom: 260px;
+  height: 400px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+.mainLogCard {
+  position: absolute;
+  width: 1003px;
+  left: 220px;
+  top: 470px;
+  height: 300px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.aboutTitle {
+  position: absolute;
+  left: 570px;
+  top: 270px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-size: 80px;
+  font-weight: 550;
+  color: #ffffff;
+}
+.aboutContent {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 530;
+}
+.donateLogCard {
+  position: absolute;
+  width: 1003px;
+  left: 220px;
+  height: 180px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.aboutCard1 {
+  position: absolute;
+  width: 1003px;
+  left: 220px;
+  height: 250px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.aboutMainCard {
+  position: absolute;
+  width: 1043px;
+  left: 220px;
+  top: 600px;
+  height: 400px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  /* background-color: #ffffff; */
+}
+.aboutRegisterCard {
+  position: absolute;
+  width: 1003px;
+  left: 220px;
+  top: 950px;
+  height: 200px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  /* background-color: #ffffff; */
+}
+.divDonate {
+  height: 580px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.registeredCard {
+  position: absolute;
+  width: 1003px;
+  left: 220px;
+  top: 370px;
+  height: 250px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.donateImage {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+.donateCards {
+  display: table;
+  width: 100%;
+}
+.donateText {
+  position: absolute;
+  width: 50%;
+  right: 0px;
+}
+.newsText1 {
+  position: absolute;
+  width: 30%;
+  right: 0px;
+}
+.newsText2 {
+  position: absolute;
+  width: 30%;
+  left: 420px;
+}
+.newsText3 {
+  position: absolute;
+  width: 30%;
+  left: 0px;
+}
+.donateSmallText {
+  margin: 20px;
+  margin-left: 40px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+}
+.mainSmallText {
+  margin: 20px;
+  margin-left: 40px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 500;
+  color: #484848;
+}
+.verticalLine {
+  position: absolute;
+  display: inline-block;
+  border-left: 2px solid #999999;
+  margin: 0 490px;
+  margin-top: 20px;
+  height: 170px;
+}
+.mainButton {
+  margin-top: 70px;
+  margin-left: 140px;
+}
+.verticalLine2 {
+  position: absolute;
+  display: inline-block;
+  border-left: 2px solid #999999;
+  margin: 0 490px;
+  margin-top: 20px;
+  height: 370px;
+}
+.registerImage {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+.registerText {
+  position: absolute;
+  width: 50%;
+  left: 0px;
+  padding-right: 1rem;
+}
+.inputGroup {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.inputLabel {
+  text-align: left;
+}
+.inputField {
+  height: 30px;
+}
+.h2 {
+  position: absolute;
+  width: 433px;
+  left: 252px;
+  top: 110px;
+}
+.over {
+  position: absolute;
+  left: 300px;
+  bottom: 70px;
+}
+.overright {
+  position: absolute;
+  right: 300px;
+  bottom: 70px;
+}
+.contact {
+  left: -8px;
+  top: 0px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 50px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.donateh1 {
+  margin: 18px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+}
+.regish1 {
+  margin: 18px;
+  margin-left: 30px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+}
+.line1 {
+  left: -9px;
+  top: 0px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 10px;
+  color: #ffffff;
+}
+.credit {
+  position: absolute;
+  bottom: 7px;
+  color: #ffffff;
+}
+.h2span {
+  left: -8px;
+  top: 0px;
+  bottom: 77px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+}
+.h2spanLog {
+  left: -8px;
+  top: 0px;
+  bottom: 77px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 70px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+}
+.registerCard {
+  position: absolute;
+  width: 2003px;
+  left: 252px;
+  top: 110px;
+}
+.button {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
 
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.Registerbutton {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.minortext {
+  left: -8px;
+  top: 0px;
+  bottom: 77px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+}
+.newsTitleText {
+  margin: 5px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 17px;
+}
+.table {
+  border-color: "green";
+  top: 150px;
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
 .footer {
   display: flex;
   flex: 1;
+  height: 200px;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 2px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background: rgba(4, 45, 85, 0.4);
+}
+.updateText {
+  margin: 0.5rem;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 15px;
+  line-height: 17px;
+}
+.update {
+  margin: 0.5rem;
+  color: #005bbb;
+}
+.hr {
+  position: absolute;
+  bottom: 40px;
+  color: #ffffff;
+}
+.mainhr {
+  position: absolute;
+  top: 570px;
+  color: #ffc43a;
+}
+.top1 {
+  position: absolute;
+  width: 107px;
+  height: 32px;
+  left: calc(50% - 107px / 2 - 298.5px);
+  top: calc(50% - 32px / 2);
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.top2 {
+  position: absolute;
+  width: 175px;
+  height: 32px;
+  left: calc(50% - 175px / 2 - 95.5px);
+  top: calc(50% - 32px / 2);
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.top3 {
+  position: absolute;
+  width: 152px;
+  height: 32px;
+  left: calc(50% - 152px / 2 + 132px);
+  top: calc(50% - 32px / 2);
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.top4 {
+  position: absolute;
+  width: 82px;
+  height: 32px;
+  left: calc(50% - 82px / 2 + 311px);
+  top: calc(50% - 32px / 2);
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.header {
+  position: fixed;
+  align-items: top;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
+.active {
+  position: fixed;
+  align-items: center;
+  height: 70px;
+  background: rgba(0, 100, 0, 0.5);
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .footer a {
   display: flex;
   justify-content: center;
@@ -40,9 +498,30 @@
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  position: absolute;
+  top: 500px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 60px;
+}
+.newsTitle {
+  position: absolute;
+  bottom: 720px;
+  left: 380px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 60px;
+}
+.newsDes {
+  position: absolute;
+  bottom: 690px;
+  left: 180px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 20px;
 }
 
 .title,
