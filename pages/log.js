@@ -15,13 +15,14 @@ export default function Log() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Image
-        src="/logpage.svg"
-        alt="Log Page Image"
-        width={2000}
-        height={600}
-        objectFit="cover"
-      />
+      <div className={styles.frontImage}>
+        <Image
+          src="/logpage.svg"
+          alt="Log Page Image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div>
         <h2 className={styles.h2}>
           <span className={styles.h2spanLog}>Transparency Notice</span>

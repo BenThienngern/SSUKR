@@ -36,13 +36,14 @@ export default function About() {
           height: "400px",
         }}
       >
-        <Image
-          src="/aboutPage.svg"
-          alt="about Image"
-          width={2000}
-          height={552}
-          objectFit="cover"
-        />
+        <div className={styles.frontImage}>
+          <Image
+            src="/aboutPage.svg"
+            alt="about Image"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <h1 className={styles.aboutTitle}>About Us</h1>
         <hr
           size="7"

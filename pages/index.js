@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/link-passhref */
 import Head from "next/head";
 import Image from "next/image";
@@ -19,13 +20,14 @@ class Index extends Component {
         </Head>
         <Navigation />
         <div>
-          <Image
-            src="/Vector.svg"
-            alt="Cover Image"
-            width={2000}
-            height={600}
-            objectFit="cover"
-          />
+          <div className={styles.frontImage}>
+            <Image
+              src="/Vector.svg"
+              alt="Cover Image"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div>
             <h2 className={styles.h2}>
               <span className={styles.h2span}>Our Mission</span>
@@ -35,11 +37,17 @@ class Index extends Component {
                 Ambassador. Admission Ambassadors not only give tours to
                 prospective families, .{" "}
               </p>
-              <Link href="/donate">
-                <Button rounded color="warning">
-                  <p className={styles.button}> Donate</p>
-                </Button>
-              </Link>
+              <div className={styles.classicButton}>
+                <Link href="/donate">
+                  <Button
+                    rounded
+                    color="warning"
+                    className={styles.classicButton}
+                  >
+                    <p className={styles.button}> Donate</p>
+                  </Button>
+                </Link>
+              </div>
             </h2>
           </div>
         </div>
@@ -78,15 +86,11 @@ class Index extends Component {
           </span>
         </main>
         <div className={styles.divDonate}></div>
-        <main
-          style={{
-            height: "650px",
-          }}
-        >
+        <main className={styles.mainOfNews}>
           <h1 className={styles.newsTitle}>News Surrounding the Issue</h1>
           <div className={styles.newsDes}>
-            you for your interest in applying to be an Admission Ambassador.
-            Admission Ambassadors not only give tours to prospective
+            The ongoing war has a huge impact on Ukrainian students who are
+            studying abroad here are a few article that highlight this issue
           </div>
 
           <span className={styles.mainNewsCard}>
@@ -101,9 +105,8 @@ class Index extends Component {
                 />
               </div>
               <div className={styles.newsTitleText}>
-                Thank you for your interest in applying to be an Admission
-                Ambassador. Admission Ambassadors not only give tours to
-                prospective
+                "U.S. Colleges, and Their Russian and Ukrainian Students, Are
+                Caught Up In a Crisis" TIME
               </div>
               <Row
                 justify="center"
@@ -112,13 +115,13 @@ class Index extends Component {
                 }}
               >
                 <a
-                  href="https://www.freecodecamp.org/"
+                  href="https://time.com/6154517/russian-ukrainian-college-students-u-s/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <Button rounded className={styles.button} color="warning">
-                    More About Us
+                    Read More
                   </Button>
                 </a>
               </Row>
@@ -134,9 +137,8 @@ class Index extends Component {
                 />
               </div>
               <div className={styles.newsTitleText}>
-                Thank you for your interest in applying to be an Admission
-                Ambassador. Admission Ambassadors not only give tours to
-                prospective
+                "Ukrainian students in the U.S. watch a war on their homeland
+                unfold from abroad" NPR
               </div>
               <Row
                 justify="center"
@@ -145,13 +147,13 @@ class Index extends Component {
                 }}
               >
                 <a
-                  href="https://www.freecodecamp.org/"
+                  href="https://www.npr.org/2022/03/20/1087766118/ukrainian-students-us-colleges#:~:text=Some%201%2C700%20Ukrainians%20are%20studying,from%20thousands%20of%20miles%20away."
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <Button rounded className={styles.button} color="warning">
-                    More About Us
+                    Read More
                   </Button>
                 </a>
               </Row>
@@ -167,9 +169,8 @@ class Index extends Component {
                 />
               </div>
               <div className={styles.newsTitleText}>
-                Thank you for your interest in applying to be an Admission
-                Ambassador. Admission Ambassadors not only give tours to
-                prospective
+                "Ukrainian students in the U.S. face emotional, financial
+                hardships" Marketplace
               </div>
               <Row
                 justify="center"
@@ -178,13 +179,13 @@ class Index extends Component {
                 }}
               >
                 <a
-                  href="https://www.freecodecamp.org/"
+                  href="https://www.marketplace.org/2022/03/07/ukrainian-students-u-s-face-emotional-financial-hardships/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <Button rounded className={styles.button} color="warning">
-                    More About Us
+                    Read More
                   </Button>
                 </a>
               </Row>

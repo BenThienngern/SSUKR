@@ -21,12 +21,11 @@ export default function Navigation() {
   });
   return (
     <header
-      className="navbar navbar-expand-lg fixed-top"
+      className={`navbar navbar-expand-lg fixed-top ${styles.navBar}`}
       style={{
         background: `rgba(0, 0, 0, ${backgroundTransparacy})`,
         position: "fixed",
         align: "top",
-        height: "70px",
       }}
     >
       {/* <nav className="navbar navbar-expand-lg fixed-top py-3">

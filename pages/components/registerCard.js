@@ -33,9 +33,20 @@ export default function DonationCard() {
             bulk of the card content.
           </Text>
           <Row justify="flex-end">
-            <Button rounded color="warning">
-              <p className={styles.button}> Donate</p>
-            </Button>
+            <script
+              type="text/javascript"
+              defer
+              src="https://donorbox.org/install-popup-button.js"
+            ></script>
+            <a
+              className="dbox-donation-button"
+              style={{ textDecoration: "none" }}
+              href="https://donorbox.org/support-ukrainian-students-in-the-us"
+            >
+              <Button rounded color="warning">
+                <p className={styles.button}> Donate</p>
+              </Button>
+            </a>
           </Row>
         </div>
       </section>

@@ -15,13 +15,15 @@ export default function Donate() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Image
-        src="/DonateBack.svg"
-        alt="Background Image"
-        width={1920}
-        height={858}
-      />
-      <div>
+      <div className={styles.frontImageDonate}>
+        <Image
+          src="/DonateBack.svg"
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className={styles.donateCardCover}>
         <DonationCard />
       </div>
       <div>

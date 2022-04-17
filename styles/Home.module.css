@@ -15,11 +15,14 @@
   position: absolute;
   width: 1003px;
   left: 220px;
-  top: 90px;
   height: 250px;
   padding-right: 2rem;
   padding-left: 1rem;
   background-color: #ffffff;
+}
+.donateCardCover {
+  position: absolute;
+  top: 90px;
 }
 .aboutDonationCard {
   position: absolute;
@@ -139,6 +142,11 @@
   width: 30%;
   right: 0px;
 }
+.successCard {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+}
 .newsText2 {
   position: absolute;
   width: 30%;
@@ -225,6 +233,53 @@
   right: 300px;
   bottom: 70px;
 }
+.mainOfNews {
+  height: 650px;
+}
+@media (max-width: 700px) {
+  .h2 {
+    position: absolute;
+    width: 1200px;
+    left: 152px;
+    top: 450px;
+  }
+  .aboutMainCard {
+    position: absolute;
+    width: 1603px;
+    left: 20px;
+    top: 700px;
+    height: 1400px;
+  }
+  .over {
+    position: absolute;
+    left: 200px;
+    bottom: 1300px;
+    width: 1000px;
+  }
+  .overright {
+    position: absolute;
+    left: 200px;
+    bottom: 400px;
+    width: 1000px;
+  }
+  .main {
+    position: absolute;
+    top: 2000px;
+    height: 1000px;
+    padding: 4rem 0;
+    flex: 1;
+    background-color: #000;
+  }
+  .mainOfNews {
+    height: 1200px;
+  }
+  .divDonate {
+    position: absolute;
+    height: 1500px;
+    width: 2000px;
+  }
+}
+
 .contact {
   left: -8px;
   top: 0px;
@@ -275,6 +330,47 @@
   line-height: 90px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 700px) {
+  .h2span {
+    left: -8px;
+    top: 0px;
+    bottom: 77px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 150px;
+    line-height: 250px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .contact {
+    font-size: 190px;
+    line-height: 200px;
+  }
+  .credit {
+    position: absolute;
+    bottom: 20px;
+    font-size: 70px;
+    line-height: 80px;
+    width: 1500px;
+    left: 100px;
+    color: #ffffff;
+  }
+  .line1 {
+    font-size: 90px;
+    line-height: 100px;
+  }
+}
+.navBar {
+  height: 70px;
+  position: absolute;
+}
+@media (max-width: 700px) {
+  .navBar {
+    height: 380px;
+    position: absolute;
+  }
 }
 .h2spanLog {
   left: -8px;
@@ -335,6 +431,45 @@
   color: #ffffff;
   background: rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 700px) {
+  .minortext {
+    margin-left: 50px;
+    left: -8px;
+    top: 0px;
+    bottom: 77px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 120px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+.classicButton {
+  padding: 16px;
+}
+@media (max-width: 700px) {
+  .classicButton {
+    margin-top: 30px;
+    width: 600px;
+    height: 200px;
+  }
+  .button {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+  }
+}
 .newsTitleText {
   margin: 5px;
   font-family: "Helvetica";
@@ -362,6 +497,14 @@
   justify-content: center;
   align-items: center;
   background: rgba(4, 45, 85, 0.4);
+}
+@media (max-width: 700px) {
+  .footer {
+    height: 2000px;
+    width: 2000px;
+    position: absolute;
+    bottom: -3000px;
+  }
 }
 .updateText {
   margin: 0.5rem;
@@ -458,6 +601,89 @@
 
   color: #ffffff;
 }
+@media (max-width: 700px) {
+  .top1 {
+    position: absolute;
+    width: 407px;
+    height: 40px;
+    left: 100px;
+    top: 90px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 550;
+    font-size: 80px;
+    line-height: 70px;
+    /* identical to box height, or 178% */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  .top2 {
+    position: absolute;
+    width: 407px;
+    height: 40px;
+    left: 670px;
+    top: 90px;
+
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 550;
+    font-size: 80px;
+    line-height: 70px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+  }
+  .top3 {
+    position: absolute;
+    width: 407px;
+    height: 40px;
+    left: 1000px;
+    top: 240px;
+
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 550;
+    font-size: 80px;
+    line-height: 70px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+  }
+  .top4 {
+    position: absolute;
+    width: 407px;
+    height: 40px;
+    left: 400px;
+    top: 240px;
+
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 550;
+    font-size: 80px;
+    line-height: 70px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+  }
+  .mainhr {
+    position: absolute;
+    height: 30px;
+    width: 1400px;
+    left: 100px;
+    top: 570px;
+    color: #ffc43a;
+  }
+}
 .header {
   position: fixed;
   align-items: top;
@@ -505,6 +731,36 @@
   font-weight: 520;
   font-size: 60px;
 }
+@media (max-width: 700px) {
+  .title {
+    font-size: 190px;
+    width: 1500px;
+    top: 100px;
+    left: 100px;
+  }
+}
+.frontImage {
+  position: relative;
+  width: 2000px;
+  height: 440px;
+}
+.frontImageDonate {
+  position: relative;
+  width: 1920;
+  height: 658px;
+}
+@media (max-width: 700px) {
+  .frontImage {
+    position: relative;
+    width: 3000px;
+    height: 2000px;
+  }
+  .frontImageDonate {
+    position: relative;
+    width: 4000px;
+    height: 3000px;
+  }
+}
 .newsTitle {
   position: absolute;
   bottom: 720px;
@@ -524,7 +780,6 @@
   font-size: 20px;
 }
 
-.title,
 .description {
   text-align: center;
 }
