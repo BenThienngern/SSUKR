@@ -1,4 +1,4 @@
-export const Password = ({ fill, size, height, width, ...props }) => {
+const Password = ({ fill, size, height, width, ...props }) => {
   return (
     <svg
       width={size || width || 24}
@@ -13,3 +13,5 @@ export const Password = ({ fill, size, height, width, ...props }) => {
     </svg>
   );
 };
+
+export default Password;
