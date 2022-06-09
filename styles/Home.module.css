@@ -43,6 +43,15 @@
   padding-right: 2rem;
   padding-left: 1rem;
 }
+.mainNewsCard2 {
+  position: absolute;
+  width: 1203px;
+  left: 120px;
+  bottom: 500px;
+  height: 400px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
 .mainLogCard {
   position: absolute;
   width: 1003px;
@@ -69,12 +78,13 @@
   font-style: normal;
   font-size: 24px;
   font-weight: 530;
+  margin-top: 25px;
 }
 .donateLogCard {
   position: absolute;
   width: 1003px;
   left: 220px;
-  height: 180px;
+  height: 220px;
   padding-right: 2rem;
   padding-left: 1rem;
   background-color: #ffffff;
@@ -85,6 +95,16 @@
   width: 1003px;
   left: 220px;
   height: 250px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.mainExplainCard {
+  position: absolute;
+  width: 1203px;
+  left: 110px;
+  height: 500px;
   padding-right: 2rem;
   padding-left: 1rem;
   background-color: #ffffff;
@@ -425,9 +445,9 @@
   bottom: 77px;
   font-family: "Helvetica";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 580;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 25px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.1);
 }
@@ -765,6 +785,15 @@
   position: absolute;
   bottom: 720px;
   left: 380px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 60px;
+}
+.teamTitle {
+  position: absolute;
+  bottom: 920px;
+  left: 500px;
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 520;

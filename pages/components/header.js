@@ -15,6 +15,7 @@ export default function Header() {
       header.classList.add("headerTest");
       nav.classList.add("menuTest");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

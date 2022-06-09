@@ -13,7 +13,11 @@ import { Mail } from "./Mail";
 import { Password } from "./Password";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
-import { BsCheckCircle, BsXCircle } from "react-icons/bs";
+import {
+  BsCheckCircle,
+  BsXCircle,
+  BsFillExclamationCircleFill,
+} from "react-icons/bs";
 
 export default function Register() {
   const { setVisible, bindings } = useModal();
@@ -29,6 +33,7 @@ export default function Register() {
   const [accept, setAccept] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [openSuccess, setOpenSuccess] = useState(false);
+  const [openNotice, setOpenNotice] = useState(false);
   const [openFail, setOpenFail] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -95,6 +100,44 @@ export default function Register() {
       <Button rounded onClick={() => setVisible(true)}>
         <p className={styles.Registerbutton}> Register</p>
       </Button>
+      <Modal open={openNotice} width="430px">
+        <Modal.Body style={{ height: "330px" }}>
+          <div className={styles.successCard}>
+            <div
+              style={{
+                height: "4em",
+                color: "rgba(255, 204, 0, 1)",
+                marginTop: "10px",
+              }}
+            >
+              <BsFillExclamationCircleFill size="1x" />
+            </div>
+            <div
+              style={{
+                marginLeft: "80px",
+                marginTop: "10px",
+                fontFamily: "Helvetica",
+                fontWeight: 550,
+                fontSize: "20px",
+              }}
+            >
+              Terms and Conditions
+            </div>
+            <div style={{ margin: "10px" }}>
+              This process may take up to a few days since the system is not
+              automated. We reserve all rights to accept or reject users to
+              receive donations. Fees and tax will be included in the amount
+              transferred. If you wish to stop receiving donations or have any
+              other question please email us at ssukr2022@gmail.com
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button auto onClick={() => setOpenNotice(false)}>
+            Understood
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <Modal
         scroll
         width="800px"
@@ -121,8 +164,10 @@ export default function Register() {
             </div>
             <div className={styles.donateText} style={{ padding: "30px" }}>
               <div>
-                Notice kjasbjkc bhjksab ckjbk sajbnckj sabjck bsakjcb kjsa
-                bcjkbjk
+                By filling out this form, we will send a confirmation email to
+                your email and a verification email to your administration to
+                verify your need. We will reach back to you via email as soon as
+                the onboarding is successful.
               </div>
               <form>
                 <div>
@@ -187,7 +232,9 @@ export default function Register() {
                       <option>Other</option>
                     </select>
                   </div>
-                  <label>Educational Instution Contact Email</label>
+                  <label>
+                    Educational Instution Contact Email to verify your need
+                  </label>
                   <input
                     type="email"
                     className="form-control"
@@ -213,7 +260,7 @@ export default function Register() {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="2022"
+                    placeholder="username"
                     onChange={(e) => {
                       setPaymentname(e.target.value);
                     }}
@@ -229,7 +276,10 @@ export default function Register() {
                     }}
                   />
                   <label className="form-check-label" htmlFor="exampleCheck1">
-                    Check me out
+                    I understand the{" "}
+                    <a style={{ color: "#084FFE" }} onClick={setOpenNotice}>
+                      terms and conditions
+                    </a>
                   </label>
                 </div>
                 <button

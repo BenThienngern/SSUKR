@@ -20,20 +20,20 @@ export default function LogTable() {
     },
   ];
   const rows = [
-    {
-      key: "1",
-      date: "11 Apr 2022",
-      type: "Donation",
-      by: "Unnamed Contributions",
-      amount: "20.00 $",
-    },
-    {
-      key: "2",
-      date: "11 Apr 2022",
-      type: "Donation",
-      by: "Mr. Firstname Lastname",
-      amount: "20.00 $",
-    },
+    // {
+    //   key: "1",
+    //   date: "11 Apr 2022",
+    //   type: "Donation",
+    //   by: "Unnamed Contributions",
+    //   amount: "20.00 $",
+    // },
+    // {
+    //   key: "2",
+    //   date: "11 Apr 2022",
+    //   type: "Donation",
+    //   by: "Mr. Firstname Lastname",
+    //   amount: "20.00 $",
+    // },
   ];
   return (
     <Table

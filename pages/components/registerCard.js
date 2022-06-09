@@ -25,12 +25,15 @@ export default function DonationCard() {
           <p className={styles.update}>
             <BsClockFill />
             <span className={styles.updateText}>
-              Next Round of Donations: 11 Apr 2022
+              Next Round of Distribution: 20 Jun 2022
             </span>
           </p>
           <Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card content.
+            Donate to help Ukrainian student studying abroad in the US who face
+            financial hardships due to the war back in Ukraine. Each week we
+            will devide the funds and send to those who registered to recieve
+            it. We hope that this small contributions can truly impact their
+            lives in tough time.
           </Text>
           <Row justify="flex-end">
             <script

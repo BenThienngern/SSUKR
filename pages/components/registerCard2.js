@@ -17,12 +17,14 @@ export default function RegisterCard() {
           <p className={styles.update}>
             <BsClockFill />
             <span className={styles.updateText}>
-              Next Round of Donations: 11 Apr 2022
+              Next Round of Onboarding: 11 Jun 2022
             </span>
           </p>
           <Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card content.
+            If you are a Ukrainian student in the United States who may benefit
+            from this donation please register to be a recipient. We will
+            transfer the donation money to your Paypal/Venmo account weekly to
+            help with your cost of living.
           </Text>
           <Row justify="flex-end">
             <Register />
