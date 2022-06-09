@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import styles from "./header.module.css";
+import styles from "../../styles/Home.module.css";
 import { useRouter } from "next/router";
 
 export default function Header() {

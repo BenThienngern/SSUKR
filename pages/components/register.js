@@ -9,8 +9,6 @@ import {
   useModal,
 } from "@nextui-org/react";
 import { useState } from "react";
-import { Mail } from "./Mail";
-import { Password } from "./Password";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 import {
