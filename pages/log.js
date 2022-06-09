@@ -1,5 +1,5 @@
-import Navigation from ".//components/Navigation";
-import Footer from ".//components/Footer";
+import Navigation from ".//components/navigation";
+import Footer from ".//components/footer";
 import LogTable from ".//components/table";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";

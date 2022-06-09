@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import Navigation from ".//components/Navigation";
+import Navigation from ".//components/navigation";
 import { Modal, Button } from "@nextui-org/react";
 import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
-import Footer from ".//components/Footer";
+import Footer from ".//components/footer";
 import DonationCard from ".//components/registerCard";
 import RegisterCard from ".//components/registerCard2";
 import styles from "../styles/Home.module.css";

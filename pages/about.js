@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import Navigation from ".//components/navigation";
 import Footer from ".//components/footer";
 import Head from "next/head";
