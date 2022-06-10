@@ -31,9 +31,9 @@ export default function DonationCard() {
           <Text>
             Donate to help Ukrainian student studying abroad in the US who face
             financial hardships due to the war back in Ukraine. Each week we
-            will devide the funds and send to those who registered to recieve
-            it. We hope that this small contributions can truly impact their
-            lives in tough time.
+            will divide the funds and send to those who registered to recieve
+            it. We hope that this small contribution can truly impact their
+            lives in these tough times.
           </Text>
           <Row justify="flex-end">
             <script

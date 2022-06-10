@@ -45,7 +45,7 @@ export default function Donate() {
               Donation notice
             </div>
             <div style={{ margin: "10px" }}>
-              This project is developed and run by a high school student who
+              This project is developed and run by a high school students who
               truly wishes to make a difference. However, due to our small
               scale, we are unable to get the tax exemption for nonprofit and an
               organization's bank accounts. Therefore, all the money donated

@@ -35,10 +35,10 @@ class Index extends Component {
               <span className={styles.h2span}>Our Mission</span>
               <p className={styles.minortext}>
                 Witnessing one of our closest friends suddenly face financial
-                struggle due to the war because her father quit his job to serve
-                on the front lines, we create a platform in which fellow
-                Ukrainian students who face similar hardship can receive
-                donations weekly to help support their cost of living.
+                struggles due to her father serving on the war's front lines
+                inspried us to create a platform that helps Ukrainian students
+                who face similar hardship recieve donations weekly to help
+                support their cost of living.
               </p>
               <div className={styles.classicButton}>
                 <Link href="/donate">

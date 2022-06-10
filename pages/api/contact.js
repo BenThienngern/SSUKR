@@ -2,13 +2,23 @@ export default function Contact(req, res) {
   require("dotenv").config();
 
   let nodemailer = require("nodemailer");
+  const { google } = require("googleapis");
   const PASSWORD = process.env.password;
+  const config = require("./config.js");
+  const OAuth2 = google.auth.OAuth2;
+
+  const OAuth2_client = new OAuth2(config.clientID, config.clientSecret);
+  OAuth2_client.setCredentials({ refresh_token: config.refreshToken });
+  const accessToken = OAuth2_client.getAccessToken();
   const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
+    service: "gmail",
     auth: {
+      type: "OAUTH2",
       user: "ssukr2022.noreply@gmail.com",
-      pass: PASSWORD,
+      clientId: config.clientID,
+      clientSecret: config.clientSecret,
+      refreshToken: config.refreshToken,
+      accessToken: accessToken,
     },
     secure: true,
   });
@@ -60,7 +70,7 @@ export default function Contact(req, res) {
     <p/>
     
     
-                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="http://www.example.com" style="color:#2B5ECB;text-decoration:underline;">Visit our website</a></p>
+                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="https://www.supportukrainianstudents.org" style="color:#2B5ECB;text-decoration:underline;">Visit our website</a></p>
                                         </td>
                                     </tr>
                                 </table>
@@ -139,7 +149,7 @@ export default function Contact(req, res) {
     <p/>
     
     
-                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="http://www.example.com" style="color:#2B5ECB;text-decoration:underline;">Visit our website</a></p>
+                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="https://www.supportukrainianstudents.org" style="color:#2B5ECB;text-decoration:underline;">Visit our website</a></p>
                                         </td>
                                     </tr>
                                 </table>
