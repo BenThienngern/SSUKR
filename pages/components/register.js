@@ -16,6 +16,7 @@ import {
   BsXCircle,
   BsFillExclamationCircleFill,
 } from "react-icons/bs";
+import emailjs from "emailjs-com";
 
 export default function Register() {
   const { setVisible, bindings } = useModal();
@@ -50,46 +51,94 @@ export default function Register() {
       alert("Please input information into all the fields");
     } else {
       console.log("Sending");
-      let data = {
-        firstname,
-        lastname,
-        email,
-        schoolname,
-        gradYear,
-        schoolType,
-        admsEmail,
-        paymentMethod,
-        paymentname,
-        accept,
+      var templateParams = {
+        email: email,
+        firstname: firstname,
+        lastname: lastname,
+        email: email,
+        schoolname: schoolname,
+        graduationYear: gradYear,
+        schoolType: schoolType,
+        schoolEmail: admsEmail,
+        paymentMethod: paymentMethod,
+        paymentName: paymentname,
       };
-      fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      }).then((res) => {
-        console.log("Response received");
-        if (res.status === 200) {
-          console.log("Response succeeded!");
-          setSubmitted(true);
-          setFirstname("");
-          setLastname("");
-          setEmail("");
-          setSchoolname("");
-          setGradYear("");
-          setSchoolType("");
-          setAdmsEmail("");
-          setPaymentMethod("");
-          setPaymentname("");
-          setAccept(false);
-          setOpenSuccess(true);
-          setVisible(false);
-        } else {
-          setOpenFail(true);
-        }
-      });
+      emailjs
+        .send(
+          "service_fzbqtdm",
+          "template_jc7ztfb",
+          templateParams,
+          "SyhUqyuRyVsHaHeA9"
+        )
+        .then(
+          (result) => {
+            emailjs.send(
+              "service_fzbqtdm",
+              "template_ktvhbzq",
+              templateParams,
+              "SyhUqyuRyVsHaHeA9"
+            );
+            console.log(result);
+            setSubmitted(true);
+            setFirstname("");
+            setLastname("");
+            setEmail("");
+            setSchoolname("");
+            setGradYear("");
+            setSchoolType("");
+            setAdmsEmail("");
+            setPaymentMethod("");
+            setPaymentname("");
+            setAccept(false);
+            setOpenSuccess(true);
+            setVisible(false);
+          },
+          (error) => {
+            console.log(error);
+            setOpenFail(true);
+          }
+        );
+
+      // let data = {
+      //   firstname,
+      //   lastname,
+      //   email,
+      //   schoolname,
+      //   gradYear,
+      //   schoolType,
+      //   admsEmail,
+      //   paymentMethod,
+      //   paymentname,
+      //   accept,
+      // };
+      // fetch("/api/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     Accept: "application/json, text/plain, */*",
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(data),
+      // }).then((res) => {
+      //   console.log("Response received");
+      //   if (res.status === 200) {
+      //     console.log("Response succeeded!");
+      //     setSubmitted(true);
+      //     setFirstname("");
+      //     setLastname("");
+      //     setEmail("");
+      //     setSchoolname("");
+      //     setGradYear("");
+      //     setSchoolType("");
+      //     setAdmsEmail("");
+      //     setPaymentMethod("");
+      //     setPaymentname("");
+      //     setAccept(false);
+      //     setOpenSuccess(true);
+      //     setVisible(false);
+      //   } else {
+      //     setOpenFail(true);
+      //   }
+      // });
     }
   };
 
