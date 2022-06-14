@@ -12,6 +12,8 @@ export default function Contact(req, res) {
   const accessToken = OAuth2_client.getAccessToken();
   const transporter = nodemailer.createTransport({
     service: "gmail",
+    port: 465,
+    secure: true,
     auth: {
       type: "OAUTH2",
       user: "ssukr2022.noreply@gmail.com",
