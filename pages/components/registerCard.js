@@ -10,8 +10,8 @@ export default function DonationCard() {
             <Text b>Card Title</Text>
           </Card.Header>
           <Divider /> */}
-      <section className={styles.donateCards}>
-        <div className={styles.donateImage}>
+      <section className={styles.donateCardsReal}>
+        <div className={styles.donateImageInDonate}>
           <Image
             src="/DonateCard.svg"
             alt="Donate Image"
@@ -20,12 +20,12 @@ export default function DonationCard() {
             objectFit="cover"
           />
         </div>
-        <div className={styles.donateText}>
-          <h3>Donate</h3>
+        <div className={styles.donateText1}>
+          <h3 className={styles.donateTextTitle}>Donate</h3>
           <p className={styles.update}>
             <BsClockFill />
             <span className={styles.updateText}>
-              Next Round of Distribution: 20 Jun 2022
+              Next Round of Distribution: 1 Aug 2022
             </span>
           </p>
           <Text>
@@ -46,7 +46,7 @@ export default function DonationCard() {
               style={{ textDecoration: "none" }}
               href="https://donorbox.org/support-ukrainian-students-in-the-us"
             >
-              <Button rounded color="warning">
+              <Button rounded color="warning" className={styles.DBbutton}>
                 <p className={styles.button}> Donate</p>
               </Button>
             </a>

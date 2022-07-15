@@ -143,7 +143,11 @@ export default function Register() {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        marginTop: "10px",
+      }}
+    >
       <Button rounded onClick={() => setVisible(true)}>
         <p className={styles.Registerbutton}> Register</p>
       </Button>
@@ -200,7 +204,7 @@ export default function Register() {
             className={styles.donateCards}
             // style={{ backgroundColor: "#000000", height: "200px" }}
           >
-            <div className={styles.donateImage}>
+            <div className={styles.donateImageInDonate}>
               <Image
                 src="/registerBox.svg"
                 alt="Donate Image"

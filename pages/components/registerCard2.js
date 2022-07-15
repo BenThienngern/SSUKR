@@ -13,11 +13,11 @@ export default function RegisterCard() {
           <Divider /> */}
       <section className={styles.donateCards}>
         <div className={styles.registerText}>
-          <h3>Recieve Donation</h3>
+          <h3 className={styles.donateTextTitle}>Recieve Donation</h3>
           <p className={styles.update}>
             <BsClockFill />
             <span className={styles.updateText}>
-              Next Round of Onboarding: 11 Jun 2022
+              Next Round of Onboarding: 1 Aug 2022
             </span>
           </p>
           <Text>
@@ -26,7 +26,7 @@ export default function RegisterCard() {
             transfer the donation money to your Paypal/Venmo account weekly to
             help with your cost of living.
           </Text>
-          <Row justify="flex-end">
+          <Row justify="center">
             <Register />
           </Row>
         </div>

@@ -22,7 +22,7 @@ class Index extends Component {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Notice />
+        {/* <Notice /> */}
         <Navigation />
         <div>
           <div className={styles.frontImage}>

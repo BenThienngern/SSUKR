@@ -78,17 +78,17 @@ export default function Donate() {
       <div>
         <RegisterCard />
       </div>
-      <div className={styles.divDonate}>
+      <div className={styles.divDonate2}>
         <span className={styles.aboutDonationCard}>
-          <span className={styles.donateCards}>
+          <span className={styles.donateCardsReal2}>
             <span className={styles.verticalLine}></span>
             <div className={styles.donateImage}>
-              <h1 className={styles.regish1}>
+              <h1 className={styles.regish2}>
                 Donation goes to support the cost of living for Ukrainian
                 students studying abroad
               </h1>
             </div>
-            <div className={styles.donateText}>
+            <div className={styles.donateText2}>
               <div className={styles.donateSmallText}>
                 On February 24, 2022, Russia invaded Ukraine as a result of a
                 series of conflicts between Russia and Ukraine. This resulted in
@@ -104,7 +104,7 @@ export default function Donate() {
           </span>
         </span>
         <span className={styles.aboutRegisterCard}>
-          <span className={styles.donateCards}>
+          <span className={styles.donateCardsReal2}>
             <span className={styles.verticalLine}></span>
             <div className={styles.donateImage}>
               <div className={styles.donateSmallText}>
@@ -121,7 +121,7 @@ export default function Donate() {
               </div>
             </div>
             <div className={styles.donateText}>
-              <h1 className={styles.regish1}>
+              <h1 className={styles.regish21}>
                 With our small contributions we believe we can truly make an
                 impact
               </h1>

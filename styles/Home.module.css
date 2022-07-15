@@ -135,6 +135,10 @@
   height: 580px;
   background-color: rgba(0, 0, 0, 0.1);
 }
+.divDonate2 {
+  height: 580px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .registeredCard {
   position: absolute;
   width: 1003px;
@@ -149,7 +153,20 @@
   left: 0px;
   width: 50%;
 }
+.donateImageInDonate {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
 .donateCards {
+  display: table;
+  width: 100%;
+}
+.donateCardsReal {
+  display: table;
+  width: 100%;
+}
+.donateCardsReal2 {
   display: table;
   width: 100%;
 }
@@ -157,6 +174,19 @@
   position: absolute;
   width: 50%;
   right: 0px;
+}
+.donateText1 {
+  position: absolute;
+  width: 50%;
+  right: 0px;
+}
+.donateText2 {
+  position: absolute;
+  width: 50%;
+  right: 0px;
+}
+.donateTextTitle {
+ color: #000;
 }
 .newsText1 {
   position: absolute;
@@ -283,6 +313,12 @@
     left: 15px;
     top: 110px;
   }
+  .donateImageInDonate{
+    visibility: hidden;
+  }
+  .registerImage {
+    visibility: hidden;
+  }
   .aboutMainCard {
     position: absolute;
     width: 400px;
@@ -294,13 +330,13 @@
     position: absolute;
     left: 20px;
     top: 100px;
-    width: 400px;
+    width: 100%;
   }
   .overright {
     position: absolute;
     left: 20px;
     top: 10px;
-    width: 400px;
+    width: 100%;
   }
   .main {
     position: absolute;
@@ -312,19 +348,35 @@
   }
   .mainOfNews {
     height: 1830px;
-    width: 400px;
+    width: 100%;
     /* background-color: yellow; */
   }
   .divDonate {
     position: absolute;
     top: 820px;
     height: 530px;
-    width: 400px;
+    width: 100%;
+  }
+  .donateSmallText {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 500;
+  }
+  .divDonate2 {
+    height: 1230px;
+    width: 100%;
+  }
+  .registerText {
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    left: 0px;
+    padding-right: 1rem;
   }
   .mainExplainCard {
     position: absolute;
-    width: 370px;
-    left: 10px;
+    width: 380px;
+    left: 15px;
     top: 30px;
     height: 460px;
     border-radius: 10px;
@@ -345,6 +397,23 @@
     right: 10px;
     width: 100%;
   }
+  .donateText1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100%;
+  }
+  .donateText2 {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    width: 100%;
+  }
+  .donateTextTitle {
+    margin-top: 10px;
+    font-size: 40px;
+
+  }
   .donateImage {
     position: absolute;
     top: 1px;
@@ -362,12 +431,62 @@
     left: 0px;
     width: 100%;
   }
-  .verticalLine2 {
+  .donateCardsReal {
     position: absolute;
-    display: inline-block;
-    border-left: 1px solid #999999;
-    margin: 0 400px;
-    height: 400px;
+    width: 98%;
+  }
+  .donateCardsReal2 {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 100%;
+  }
+  .donateCard {
+    position: absolute;
+    width: 90%;
+    top: 20px;
+    left: 10px;
+    height: 350px;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    background-color: #ffffff;
+  }
+  .aboutDonationCard {
+    position: absolute;
+    width: 90%;
+    left: 20px;
+    top: 930px;
+    height: 470px;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  .aboutRegisterCard {
+    position: absolute;
+    width: 90%;
+    left: 20px;
+    top: 1430px;
+    height: 410px;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  .registeredCard {
+    position: absolute;
+    width: 90%;
+    top: 480px;
+    left: 20px;
+    height: 350px;
+    padding-right: 2rem;
+    padding-left: 1rem;
+  }
+  .verticalLine2 {
+    visibility: hidden;
+  }
+  .verticalLine {
+    visibility: hidden;
   }
   .mainWebGuide{
     position: absolute;
@@ -430,6 +549,13 @@
   .newsText3 {
     visibility: hidden;
   }
+  .donateCardCover {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 100%;
+  }
+
 }
 
 .contact {
@@ -450,6 +576,19 @@
   font-weight: 500;
 }
 .regish1 {
+  margin: 18px;
+  margin-left: 30px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+}
+.regish2 {
+  margin: 18px;
+  margin-left: 30px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+}.regish21 {
   margin: 18px;
   margin-left: 30px;
   font-family: "Helvetica";
@@ -520,6 +659,18 @@
     line-height: 25px;
     font-weight: 500;
   }
+  .regish2 {
+    position: absolute;
+    top: 10px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .regish21 {
+  visibility: hidden;
+  }
 }
 .navBar {
   height: 70px;
@@ -528,7 +679,7 @@
 @media (max-width: 700px) {
   .navBar {
     height: 100px;
-    width: 400px;
+    width: 100%;
     position: absolute;
   }
 }
@@ -563,6 +714,12 @@
   text-align: center;
 
   color: #000000;
+}
+.DBbutton {
+  margin: 1px;
+}
+.RBbutton {
+  margin: 1px;
 }
 .Registerbutton {
   font-family: "Helvetica";
@@ -612,6 +769,14 @@
     margin-top: 20px;
     width: 60px;
     height: 40px;
+  }
+  .DBbutton {
+    margin: 60px;
+  }
+  .RBbutton {
+    position: absolute;
+    top: 100px;
+    margin: 0px;
   }
   .button {
     font-family: "Helvetica";
@@ -672,7 +837,7 @@
 @media (max-width: 700px) {
   .footer {
     height: 280px;
-    width: 400px;
+    width: 100%;
     position: absolute;
     bottom: 0px;
   }
@@ -849,7 +1014,7 @@
   .mainhr {
     position: absolute;
     height: 5px;
-    width: 360px;
+    width: 390px;
     left: 10px;
     top: 320px;
     color: #ffc43a;
@@ -924,13 +1089,13 @@
 @media (max-width: 700px) {
   .frontImage {
     position: relative;
-    width: 400px;
+    width: 100%;
     height: 400px;
   }
   .frontImageDonate {
     position: relative;
-    width: 4000px;
-    height: 3000px;
+    width: 100%;
+    height: 900px;
   }
 }
 .newsTitle {
