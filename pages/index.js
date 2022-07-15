@@ -63,7 +63,7 @@ class Index extends Component {
           <hr size="7" width="60%" className={styles.mainhr} />
           <span className={styles.aboutMainCard}>
             <span className={styles.donateCards}>
-              <span className={styles.verticalLine2}></span>
+              <span className={styles.verticalLine2} />
               <div className={styles.donateImage}>
                 <h1 className={styles.regish1}>
                   A student-run nonprofit that aims to support Ukrainian
@@ -91,38 +91,9 @@ class Index extends Component {
           </span>
         </main>
         <div className={styles.divDonate}>
-          <span
-            className={styles.mainExplainCard}
-            style={{
-              top: "1150px",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                margin: "30px",
-                marginLeft: "30px",
-                color: "#000000",
-                fontFamily: "Helvetica",
-                fontStyle: "normal",
-                fontWeight: "500",
-              }}
-            >
-              <h2 style={{ fontSize: "50px" }}>How does this website work?</h2>
-            </div>
-            <text
-              style={{
-                position: "absolute",
-                fontSize: "25px",
-                margin: "30px",
-                marginLeft: "32px",
-                marginTop: "110px",
-                color: "#000000",
-                fontFamily: "Helvetica",
-                fontStyle: "normal",
-                fontWeight: "500",
-              }}
-            >
+          <span className={styles.mainExplainCard}>
+            <h2 className={styles.mainWebGuide}>How does this website work?</h2>
+            <text className={styles.textExplainCard}>
               We aim to provide weekly funds to support Ukrainian students
               studying in the US to support their cost of living which may be
               disrupted because of the war back in Ukraine. We take donations
@@ -145,38 +116,6 @@ class Index extends Component {
           </div>
 
           <span className={styles.mainNewsCard}>
-            <span className={styles.newsText1}>
-              <div style={{ borderRadius: "20px", overflow: "hidden" }}>
-                <Image
-                  src="/news1.svg"
-                  alt="news1 Image"
-                  width={400}
-                  height={270}
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.newsTitleText}>
-                "U.S. Colleges, and Their Russian and Ukrainian Students, Are
-                Caught Up In a Crisis" TIME
-              </div>
-              <Row
-                justify="center"
-                style={{
-                  marginTop: "15px",
-                }}
-              >
-                <a
-                  href="https://time.com/6154517/russian-ukrainian-college-students-u-s/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Button rounded className={styles.button} color="warning">
-                    Read More
-                  </Button>
-                </a>
-              </Row>
-            </span>
             <span className={styles.newsText2}>
               <div style={{ borderRadius: "20px", overflow: "hidden" }}>
                 <Image
@@ -209,6 +148,7 @@ class Index extends Component {
                 </a>
               </Row>
             </span>
+
             <span className={styles.newsText3}>
               <div style={{ borderRadius: "20px", overflow: "hidden" }}>
                 <Image
@@ -231,6 +171,38 @@ class Index extends Component {
               >
                 <a
                   href="https://www.marketplace.org/2022/03/07/ukrainian-students-u-s-face-emotional-financial-hardships/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button rounded className={styles.button} color="warning">
+                    Read More
+                  </Button>
+                </a>
+              </Row>
+            </span>
+            <span className={styles.newsText1}>
+              <div style={{ borderRadius: "20px", overflow: "hidden" }}>
+                <Image
+                  src="/news1.svg"
+                  alt="news1 Image"
+                  width={400}
+                  height={270}
+                  objectFit="cover"
+                />
+              </div>
+              <div className={styles.newsTitleText}>
+                "U.S. Colleges, and Their Russian and Ukrainian Students, Are
+                Caught Up In a Crisis" TIME
+              </div>
+              <Row
+                justify="center"
+                style={{
+                  marginTop: "15px",
+                }}
+              >
+                <a
+                  href="https://time.com/6154517/russian-ukrainian-college-students-u-s/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none" }}
