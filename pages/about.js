@@ -44,11 +44,7 @@ export default function About() {
         </div>
         <h1 className={styles.aboutTitle}>About Us</h1>
       </div>
-      <div
-        style={{
-          height: "400px",
-        }}
-      >
+      <div className={styles.divWhite}>
         <div
           className="container px-4"
           style={{
@@ -72,29 +68,18 @@ export default function About() {
         </div>
         <hr
           size="7"
-          width="38%"
           style={{
             position: "absolute",
             top: "730px",
             left: "450px",
-
+            width: "38%",
             opacity: "0.5",
           }}
+          className={styles.abouthr}
         />
       </div>
-      <div
-        style={{
-          height: "1270px",
-          backgroundColor: "rgba(0, 0, 0, 0.1)",
-          // opacity: "0.1",
-        }}
-      >
-        <div
-          className={styles.aboutCard1}
-          style={{
-            top: "850px",
-          }}
-        >
+      <div className={styles.divAbout}>
+        <div className={styles.aboutCard1}>
           <div
             style={{
               position: "absolute",
@@ -128,12 +113,7 @@ export default function About() {
             use our platform to help those in need, as much as we can.
           </text>
         </div>
-        <span
-          className={styles.aboutCard1}
-          style={{
-            top: "1150px",
-          }}
-        >
+        <span className={styles.aboutCard2}>
           <div
             style={{
               position: "absolute",
@@ -168,12 +148,7 @@ export default function About() {
             this issue.
           </text>
         </span>{" "}
-        <span
-          className={styles.aboutCard1}
-          style={{
-            top: "1450px",
-          }}
-        >
+        <span className={styles.aboutCard3}>
           <div
             style={{
               position: "absolute",
@@ -208,12 +183,7 @@ export default function About() {
             the war.
           </text>
         </span>
-        <span
-          className={styles.aboutCard1}
-          style={{
-            top: "1750px",
-          }}
-        >
+        <span className={styles.aboutCard4}>
           <div
             style={{
               position: "absolute",
@@ -254,10 +224,9 @@ export default function About() {
         }}
       >
         <h1 className={styles.teamTitle}>Meet Our Team</h1>
-        <div className={styles.newsDes}></div>
 
-        <span className={styles.mainNewsCard2}>
-          <span className={styles.newsText1}>
+        <span className={styles.mainAboutCard2}>
+          <span className={styles.aboutText1}>
             <div style={{ borderRadius: "20px", overflow: "hidden" }}>
               <Image
                 src="/nancy.svg"
@@ -278,7 +247,7 @@ export default function About() {
               amplify the voices of those around her.
             </div>
           </span>
-          <span className={styles.newsText2}>
+          <span className={styles.aboutText2}>
             <div style={{ borderRadius: "20px", overflow: "hidden" }}>
               <Image
                 src="/nathan.svg"
@@ -299,7 +268,7 @@ export default function About() {
               students.
             </div>
           </span>
-          <span className={styles.newsText3}>
+          <span className={styles.aboutText3}>
             <div style={{ borderRadius: "20px", overflow: "hidden" }}>
               <Image
                 src="/ben.svg"

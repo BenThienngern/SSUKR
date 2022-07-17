@@ -7,10 +7,6 @@ import Register from "./register";
 export default function RegisterCard() {
   return (
     <Card className={styles.registeredCard}>
-      {/* <Card.Header>
-            <Text b>Card Title</Text>
-          </Card.Header>
-          <Divider /> */}
       <section className={styles.donateCards}>
         <div className={styles.registerText}>
           <h3 className={styles.donateTextTitle}>Recieve Donation</h3>

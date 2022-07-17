@@ -34,12 +34,7 @@ export default function Log() {
           </p>
         </h2>
       </div>
-      <div
-        className={styles.divDonate}
-        style={{
-          height: "1100px",
-        }}
-      >
+      <div className={styles.divDonateLog}>
         <span className={styles.mainLogCard}>
           {" "}
           <div
@@ -78,12 +73,7 @@ export default function Log() {
             process as transparent as possible despite the limitations we faced.
           </text>
         </span>
-        <span
-          className={styles.donateLogCard}
-          style={{
-            top: "795px",
-          }}
-        >
+        <span className={styles.donateLogCard1}>
           <div
             style={{
               position: "absolute",
@@ -118,12 +108,7 @@ export default function Log() {
             that we have to pay fees and taxes.
           </text>
         </span>
-        <span
-          className={styles.donateLogCard}
-          style={{
-            top: "1050px",
-          }}
-        >
+        <span className={styles.donateLogCard2}>
           <div
             style={{
               position: "absolute",
@@ -135,7 +120,7 @@ export default function Log() {
               fontWeight: "500",
             }}
           >
-            <h3>Not automated</h3>
+            <h3>Not automated yet</h3>
           </div>
           <text
             style={{
@@ -157,12 +142,7 @@ export default function Log() {
             website may take up to a few days.
           </text>
         </span>
-        <span
-          className={styles.donateLogCard}
-          style={{
-            top: "1300px",
-          }}
-        >
+        <span className={styles.donateLogCard3}>
           {" "}
           <div
             style={{

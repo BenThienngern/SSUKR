@@ -29,9 +29,6 @@ export default function Navigation() {
         align: "top",
       }}
     >
-      {/* <nav className="navbar navbar-expand-lg fixed-top py-3">
-        <div className="container">
-          <div id="navbarSupportedContent" className="collapse navbar-collapse"> */}
       <div>
         <Link href="/">
           <a className={styles.top1} style={{ textDecoration: "none" }}>
