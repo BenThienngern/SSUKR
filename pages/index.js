@@ -39,7 +39,7 @@ class Index extends Component {
               <p className={styles.minortext}>
                 Witnessing one of our closest friends suddenly face financial
                 struggles due to her father serving on the war's front lines
-                inspried us to create a platform that helps Ukrainian students
+                inspired us to create a platform that helps Ukrainian students
                 who face similar hardship recieve donations weekly to help
                 support their cost of living.
               </p>

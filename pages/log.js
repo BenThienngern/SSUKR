@@ -85,7 +85,7 @@ export default function Log() {
               fontWeight: "500",
             }}
           >
-            <h3>Tax and Fee</h3>
+            <h3>Taxes and Fees</h3>
           </div>
           <text
             style={{
@@ -104,8 +104,8 @@ export default function Log() {
             project properly registered as a nonprofit organization that would
             grant us tax exemption and discounted fees on Paypal. However, we
             still want to help support the students in need as much as we can.
-            Therefore, we can still receive donations and transfer them out just
-            that we have to pay fees and taxes.
+            Therefore, we can still receive donations and transfer them out
+            despite having to pay fees and taxes.
           </text>
         </span>
         <span className={styles.donateLogCard2}>
@@ -138,7 +138,7 @@ export default function Log() {
             Due to the same limitations, we struggle to fully automate the
             transaction distribution, verification, and update information on
             the website. Therefore, all of these have to be done by hand which
-            means all our processes including updating the information on this
+            means all our processes, including updating the information on this
             website may take up to a few days.
           </text>
         </span>
@@ -170,10 +170,10 @@ export default function Log() {
               fontWeight: "500",
             }}
           >
-            This website is far from perfect due to the fact that we only have
-            one developer working on it. We will continue to improve the website
-            as we continue to scale this nonprofit project. Sorry for any
-            inconvenience.
+            This website is far from perfect as we only have one developer
+            working on it. We will continue to improve the website as we
+            continue to scale this nonprofit project. Sorry for any
+            inconveniences.
           </text>
         </span>
       </div>

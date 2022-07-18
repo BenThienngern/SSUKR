@@ -59,9 +59,9 @@ export default function About() {
                 Founded in March 2022, “Support Ukrainian Students in the US” is
                 an organization based in California that aims to provide
                 Ukrainian students in the US with financial aid for their living
-                needs in light of the war on Ukraine. Through taking donations
-                from the public, aid is provided to students in the form of
-                weekly payments.
+                needs in the light of the war in Ukraine. Through taking
+                donations from the public, aid is provided to students in the
+                form of weekly payments.
               </p>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function About() {
             California who came together to create this website. We share a
             passion to make an impact on our community and beyond. As our senior
             year is approaching, this project is one of the most important
-            priorities in our busy schedule because we see the urgency to tackle
+            priorities in our hectic schedules as we see the urgency to tackle
             this issue.
           </text>
         </span>{" "}
@@ -178,7 +178,7 @@ export default function About() {
             Witnessing one of our closest friends suddenly face financial
             struggle due to the war because her father quit his job to serve on
             the front lines, we want to help her to the best of our ability.
-            That is why we create this platform hoping that we can create a
+            That is why we create this platform hoping that we can generate a
             positive impact on the lives of people who are struggling because of
             the war.
           </text>
@@ -211,10 +211,10 @@ export default function About() {
             }}
           >
             Although we are currently very small and we have no idea how far we
-            can take this project, we are trying to make a difference one person
-            at a time. After all, that small amount of money that we are
-            distributing to support Ukrainian students in times of crisis will
-            hopefully create some impact on their lives.
+            can take this project, we are trying our best to make a difference
+            one person at a time. After all, that small amount of money that we
+            are distributing to support Ukrainian students in times of crisis
+            will hopefully create some impact on their lives.
           </text>
         </span>
       </div>
@@ -282,7 +282,7 @@ export default function About() {
               Ben was born and raised in Bangkok, Thailand. He is someone who is
               truly passionate about technology and the changing world. With
               various backgrounds in web-app development through self-study and
-              internships, Ben formed and lead a team to tackle the financial
+              internships, Ben formed and lead the team to tackle the financial
               hardship Ukrainian students faced during the war. Aside from his
               strong academics, Ben is also the captain of the school’s tennis
               team and an active member of the school’s leadership program.

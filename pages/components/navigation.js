@@ -42,7 +42,7 @@ export default function Navigation() {
         </Link>
         <Link href="/log">
           <a className={styles.top3} style={{ textDecoration: "none" }}>
-            Updates/Notice
+            Updates/Notices
           </a>
         </Link>
         <Link href="/about">
