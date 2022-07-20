@@ -15,7 +15,7 @@ export default function Footer() {
         <div>
           <h3 className={styles.overright}>
             <span className={styles.contact}> Follow Us On</span>
-            <p className={styles.line1}> Instagram @support.ukr.students</p>
+            <p className={styles.line1}> Instagram @light.blue.stars.fund</p>
             <p className={styles.line1}> Facebook @...</p>
           </h3>
         </div>

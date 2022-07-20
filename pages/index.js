@@ -59,7 +59,7 @@ class Index extends Component {
         </div>
 
         <main className={styles.main}>
-          <h1 className={styles.title}>Support Ukrainian Students in the US</h1>
+          <h1 className={styles.title}>Light Blue Stars Fund</h1>
           <hr size="7" width="60%" className={styles.mainhr} />
           <span className={styles.aboutMainCard}>
             <span className={styles.donateCards}>
