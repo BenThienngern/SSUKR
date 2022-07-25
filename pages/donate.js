@@ -9,6 +9,7 @@ import DonationCard from ".//components/registerCard";
 import RegisterCard from ".//components/registerCard2";
 import styles from "../styles/Home.module.css";
 import { BsFillExclamationCircleFill } from "react-icons/bs";
+import Script from "next/script";
 
 export default function Donate() {
   const [openNotice, setOpenNotice] = useState(true);
@@ -20,6 +21,19 @@ export default function Donate() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-235348691-1"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-235348691-1');
+        `}
+      </Script>
       <Navigation />
       <Modal open={openNotice} width="470px">
         <Modal.Body style={{ height: "410px" }}>

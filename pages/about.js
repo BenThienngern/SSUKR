@@ -5,22 +5,9 @@ import Navigation from ".//components/navigation";
 import Footer from ".//components/footer";
 import Head from "next/head";
 import Image from "next/image";
-import $ from "jquery";
-import { Button, Row } from "@nextui-org/react";
-import { useEffect } from "react";
+import Script from "next/script";
 
 export default function About() {
-  // if (typeof window !== "undefined") {
-  //   $(function () {
-  //     $(window).on("scroll", function () {
-  //       if ($(window).scrollTop() > 1) {
-  //         $(".header").addClass("active");
-  //       } else {
-  //         $(".header").removeClass("active");
-  //       }
-  //     });
-  //   });
-  // }
   return (
     <div>
       <Head>
@@ -28,6 +15,19 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-235348691-1"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-235348691-1');
+        `}
+      </Script>
       <Navigation />
       <div
         style={{

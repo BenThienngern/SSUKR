@@ -9,6 +9,7 @@ import Footer from ".//components/footer";
 import Notice from ".//components/notice";
 import Link from "next/link";
 import { Button, Row } from "@nextui-org/react";
+import Script from "next/script";
 class Index extends Component {
   state = {};
   render() {
@@ -23,6 +24,19 @@ class Index extends Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         {/* <Notice /> */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=UA-235348691-1"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-235348691-1');
+        `}
+        </Script>
         <Navigation />
         <div>
           <div className={styles.frontImage}>

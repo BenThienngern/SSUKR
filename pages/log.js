@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Head from "next/head";
 import { BsClockFill } from "react-icons/bs";
+import Script from "next/script";
 
 export default function Log() {
   return (
@@ -14,6 +15,19 @@ export default function Log() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-235348691-1"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-235348691-1');
+        `}
+      </Script>
       <Navigation />
       <div className={styles.frontImage}>
         <Image
