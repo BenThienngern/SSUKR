@@ -195,7 +195,7 @@ export default function Log() {
         <p className={styles.update}>
           <BsClockFill />
           <span className={styles.updateText}>
-            Last Update: 11 Apr 2022 11:57AM PST
+            Last Update: 4 Aug 2022 11:54AM PST
           </span>
         </p>
         <LogTable />

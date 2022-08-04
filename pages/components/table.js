@@ -19,21 +19,29 @@ export default function LogTable() {
       label: "Amount",
     },
   ];
+
   const rows = [
-    // {
-    //   key: "1",
-    //   date: "11 Apr 2022",
-    //   type: "Donation",
-    //   by: "Unnamed Contributions",
-    //   amount: "20.00 $",
-    // },
-    // {
-    //   key: "2",
-    //   date: "11 Apr 2022",
-    //   type: "Donation",
-    //   by: "Mr. Firstname Lastname",
-    //   amount: "20.00 $",
-    // },
+    {
+      key: "3",
+      date: "1 Aug 2022",
+      type: "Donation distribution (2 recipients)",
+      by: "Bright Blue Star team",
+      amount: "14.00 $",
+    },
+    {
+      key: "2",
+      date: "28 Jul 2022",
+      type: "Donation to website",
+      by: "Bright Blue Star team",
+      amount: "5.00 $",
+    },
+    {
+      key: "1",
+      date: "20 Jul 2022",
+      type: "Donation to website",
+      by: "-",
+      amount: "100.00 $",
+    },
   ];
   return (
     <Table

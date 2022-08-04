@@ -25,7 +25,7 @@ export default function DonationCard() {
           <p className={styles.update}>
             <BsClockFill />
             <span className={styles.updateText}>
-              Next Round of Distribution: 1 Aug 2022
+              Next Round of Donations: 15 Aug 2022
             </span>
           </p>
           <Text>
