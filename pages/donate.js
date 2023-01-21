@@ -59,13 +59,10 @@ export default function Donate() {
               Donation notice
             </div>
             <div style={{ margin: "10px" }}>
-              This project is developed and run by high school students who
-              truly wish to make a difference. However, due to our small scale,
-              we are unable to get the tax exemption for nonprofit and an
-              organization's bank accounts. Therefore, all the money donated
-              will be transferred to a personal account that is solely created
-              for the donation purpose. We will then donate all the money after
-              tax and fees to Ukrainian students in need.
+              We apologize for the inconvenience, currently the donation is not
+              live due to the challenges we are facing with continuing this
+              project. For more information please contact us at
+              ssukr2022@gmail.com
             </div>
             <div style={{ margin: "10px" }}>
               For more information please visit our updates/notices page

@@ -13,7 +13,7 @@ export default function RegisterCard() {
           <p className={styles.update}>
             <BsClockFill />
             <span className={styles.updateText}>
-              Last Round of Donations: 1 Aug 2022
+              Last Round of Donations: Nov 2022
             </span>
           </p>
           <Text>

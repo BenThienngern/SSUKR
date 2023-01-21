@@ -25,7 +25,7 @@ export default function DonationCard() {
           <p className={styles.update}>
             <BsClockFill />
             <span className={styles.updateText}>
-              Next Round of Donations: 15 Aug 2022
+              Next Round of Donations: -
             </span>
           </p>
           <Text>
@@ -41,15 +41,20 @@ export default function DonationCard() {
               defer
               src="https://donorbox.org/install-popup-button.js"
             ></script>
-            <a
+            {/* <a
               className="dbox-donation-button"
               style={{ textDecoration: "none" }}
               href="https://donorbox.org/support-ukrainian-students-in-the-us"
+            > */}
+            <Button
+              rounded
+              color="warning"
+              className={styles.DBbutton}
+              disabled="true"
             >
-              <Button rounded color="warning" className={styles.DBbutton}>
-                <p className={styles.button}> Donate</p>
-              </Button>
-            </a>
+              <p className={styles.button}> Donate</p>
+            </Button>
+            {/* </a> */}
           </Row>
         </div>
       </section>
